@@ -15,7 +15,7 @@ At this point you need to git clone your applications.
 
 - Download and run the Raspberry Pi Image Installer at https://www.raspberrypi.org/downloads/
 
-- Reinsert the SD card to get it recognized as ##boot## drive
+- Reinsert the SD card to get it recognized as **boot** disk
 
 ```
 cd /Volumes/boot
