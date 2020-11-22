@@ -47,3 +47,20 @@ Preferences > Raspberry Pi Configuration
 ```
 - Change hostname; enable VNC, SPI, I2C; add memory to graphics
 
+## Lets add some security starting with a new user
+
+- Create a **newuser** and password
+```
+sudo useradd -m newuser -G sudo
+sudo passwd newuser
+```
+- Add a no password required for **newuser** at the bottom
+```
+sudo visudo
+newuser ALL=NOPASSWD: ALL
+```
+- Logout and login as the **newuser**
+- Remove the **pi** user and /home/pi:
+```
+sudo deluser -remove-home pi
+```
