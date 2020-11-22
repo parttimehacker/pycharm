@@ -3,9 +3,9 @@ My PyCharm setup for remote Raspberry Pi configuration hosted on Mac Book Pro.
 
 This repository contains instructions and bash scripts I use to configure new Raspberry Pi servers. My process is still too manual but its getting better. I use Raspbery Pi Imager to copy the latest image to a SD card. I enable SSH and set up Wi-Fi on the SD card while its still in my laptop. After booting the Pi for the first time I run `sudo raspi-config` to setup passwords, host names, time zone, etc. 
 
-At this point you should clone newpi into the **pi** user home directory. Run the `./start-and-network.sh` bash script to get upgrades and set up file sharing on the network.
-
 I strongly recommend creating a **newuser**, logout of **pi**; login to the **newuser** account and delete the **pi** user to improve your security. 
+
+At this point you should clone pycharm into the **newuser** user home directory. Run the `./pycharm.sh` bash script to get upgrades and set up file sharing on the network.
 
 At this point you need to git clone your applications.
 
@@ -66,7 +66,7 @@ sudo deluser -remove-home pi
 ```
 - Download the GitHub repositiory git clone `pycharm` 
 ```
-git clone https://github.com/parttimehacker/newpi.git
+https://github.com/parttimehacker/pycharm.git
 ```
 - Make pycharm.sh executable and run the script
 ```
