@@ -1,5 +1,5 @@
 # pycharm
-My PyCharm setup for remote Raspberry Pi configuration. 
+My PyCharm setup for remote Raspberry Pi configuration hosted on Mac Book Pro. 
 
 This repository contains instructions and bash scripts I use to configure new Raspberry Pi servers. My process is still too manual but its getting better. I use Raspbery Pi Imager to copy the latest image to a SD card. I enable SSH and set up Wi-Fi on the SD card while its still in my laptop. After booting the Pi for the first time I run `sudo raspi-config` to setup passwords, host names, time zone, etc. 
 
@@ -64,3 +64,24 @@ newuser ALL=NOPASSWD: ALL
 ```
 sudo deluser -remove-home pi
 ```
+- Download the GitHub repositiory git clone `pycharm` 
+```
+git clone https://github.com/parttimehacker/newpi.git
+```
+- Make pycharm.sh executable and run the script
+```
+cd pycharm
+chmod +x *.sh
+./pycharm.sh
+```
+- NOTE - Raspberry pi buster release has an issue with netatalk. You need to add home to the conf
+```
+sudo vi /etc/netatalk/afp.conf
+```
+- Add the following at the bottom
+```
+[Homes]
+  basedir regex = /home
+```
+- It is a good idea to reboot and test the network
+
