@@ -85,3 +85,16 @@ sudo vi /etc/netatalk/afp.conf
 ```
 - It is a good idea to reboot and test the network
 
+## Setup VNC to elminate the need for an HDMI cable and monitor
+- Open VNC
+```
+Menu > Options > Security
+Encryption > Prefer off
+Authentication > VNC password
+Menu > Options > Users & Permissions
+Password xxx and confirm
+```
+- Test from Mac Book Pro
+
+
+
