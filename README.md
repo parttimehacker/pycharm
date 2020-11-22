@@ -39,3 +39,11 @@ key_mgmt=WPA-PSK
 - Unmount the SD card; insert into your Raspberry Pi and boot.  I like to use a monitor until I get everything up and running. I enable vnc to access the server. 
 
 ## First step on your Pi
+
+- Do the basic stuff like timezone, pi password, update, etc.
+- Run raspi-config from the Preferences menu
+```
+Preferences > Raspberry Pi Configuration
+```
+- Change hostname; enable VNC, SPI, I2C; add memory to graphics
+
