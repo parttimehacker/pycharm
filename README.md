@@ -13,7 +13,9 @@ At this point you need to git clone your applications.
 
 - Flash the latest Raspberry Pi image to an SD card and then update the mounted boot drive
 
-Download the Raspberry Pi Image Installer at https://www.raspberrypi.org/downloads/
+- Download and run the Raspberry Pi Image Installer at https://www.raspberrypi.org/downloads/
+
+- Reinsert the SD card to get it recognized as ##boot## drive
 
 ```
 cd /Volumes/boot
