@@ -98,17 +98,17 @@ Password xxx and confirm
 
 ## Create PyCharm project on Mac Book Pro
 - Start PyCharm and create a new project
-```
-I like to use the hostname of the Pi for the location
+- I like to use the hostname of the Pi for the location
 ```
 - Select PyCharm > Preferences > Project > Python Interpreter
 ```
 - Settings > Add
 ```
 Select SSH Interpreter
-Enter the Raspberry PI IP address and the user password
-Setup remote /usr/bin/python3
-Setup remote directory /home/username/pycharm
 ```
+- Enter the Raspberry PI IP address and the user password
+- Setup remote /usr/bin/python3
+- Setup remote directory /home/username/pycharm
+
 
 
