@@ -41,8 +41,26 @@ echo "================================"
 echo
 sudo sync
 
-# Step 3: Firewall security
-echo "Install firewall installation"
+# Step 3: Adafruit stuff
+echo -e "\nInstall Adafruit libraries\n"
+sudo pip3 install --upgrade setuptools
+echo -e "\n2 of 4\n"
+sudo pip3 install RPI.GPIO
+echo -e "\n3 of 4\n"
+sudo pip3 install adafruit-blinka
+sudo pip3 install adafruit-circuitpython-bme280
+sudo pip3 install adafruit-circuitpython-max31855
+sudo pip3 install adafruit-circuitpython-motor
+echo -e "\n4 of 4\n"
+sudo pip3 install --upgrade adafruit_blinka
+sudo sync
+echo -e "\Adafruit installation complete"
+echo "================================"
+echo
+sudo sync
+
+# Step 4: Firewall security
+echo "Install firewall "
 sudo apt-get -y install ufw
 sudo ufw allow 22
 sudo ufw allow 548
